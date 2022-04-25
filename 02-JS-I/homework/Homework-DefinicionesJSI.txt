@@ -1,0 +1,7 @@
+Variable:Es un lugar en donde voy a poder guardar cierta informacion que puede cambiar.
+String: Conjunto de caracteres que se escribe entre comillas.
+Funciones:Agrupa codigos para realizar un tipo de accion que se requiere y que despues se pueden ejecutar y utilizar varias veces.
+Argumentos:Son los parametros requeridos dentro de la funcion, que cuando se ejecute la misma podran ser completados segun corresponda en base a lo especificado. 
+Return: Es la respuesta de la ejecucion de la funcion.
+Declaraciones if: Son condiciones que declaramos que de cumplirse la misma se ejecutara una accion, caso contrario no.
+Valores booleanos (true, false): Son datos con solo 2 valores posibles, como por ejemplo true or false, 1 o 0, si o no, etc.
