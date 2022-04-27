@@ -1,0 +1,9 @@
+Escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+for:Es utilizado para crear bucles controlados, permitira evaluar una expresion mas de una vez hasta que se deje de dar una cierta condicion que hayamos especificado, en ese momento se dejara  de ejecutar.
+
+&&: Operador logico AND o Y, permite verificar entre expresiones declaradas. El resultado sera verdadero siempre que todas las expresiones sean verdaderas, en caso de existir al menos una condicion falsa, el resultado sera falso.
+
+||: Operador logico OR u O, Este operador permite determinar entre expresiones dadas, en caso de condicion true or false, si una o mas son verdaderas, se ejecutara como true, y si todas son falsas, se ejecutara como false.
+
+!:Operador logico NOT o NO, permite modificar de manera contraria una experesion dada, por ejemplo si algo es true e indicamos al comienzo de la palabra un signo de admiracion de cierre dicha condicion pasara a ser false. EJ:!true, se ejecutara como false.
