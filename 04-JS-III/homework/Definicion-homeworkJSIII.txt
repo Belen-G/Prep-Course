@@ -1,0 +1,3 @@
+Arrays: Es una variable con varias posiciones en donde se
+guardan valores ya sea numericos, strings, funciones, booleanos, etc.
+Son como cajas en las cuales se almacenara la informacion que sea necesaria, la cual podra ser vista cuando se requiera.
