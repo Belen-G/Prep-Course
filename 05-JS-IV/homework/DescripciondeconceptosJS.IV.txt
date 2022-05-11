@@ -1,0 +1,5 @@
+Objetos:Son elementos que pueden que pueden contener propiedades con claves y valores, ya sean funciones,strings,numeros,arreglos,booleanos,etc.
+Propiedades:Son caracteristicas dentro de un objeto.
+Métodos:Funciones dentro de un objeto.
+Bucle for…in:Es la menera de recorrer cada una de las propiedades de un objeto.
+Notación de puntos vs notación de corchetes:Con la notacion de corchetes es para strings, mietras que la de puntos no, ya que esta ultima llama directamente al nombre de la propiedad.
