@@ -1,0 +1,2 @@
+prototype:Es una clase que esta por encima a mi clase constructora.Aquellas funciones o metodos que tenga mi clase prototype tmabien las tendra mi clase costructora.
+Constructors (de Clases):Permite generar una clase, que seria como una plantilla con propiedades que podran reutilizarse y retornara el nuevo objeto.
