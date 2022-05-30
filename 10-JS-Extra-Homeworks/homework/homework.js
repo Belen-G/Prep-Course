@@ -10,6 +10,14 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+
+  var array = Object.keys(objeto).map(function(elemento) {
+        return [elemento,objeto[elemento]]
+        });
+
+  return(array);
+   
+  
 }
 
 
@@ -18,6 +26,19 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+
+  var obj = {};
+
+  for(var i = 0; i < string.length; i++){
+    if(!obj[string[i]]){ // --> el objeto (obj) tiene una propiedad llamada string[i] (donde string[i] va 
+                         //cambiando por cada letra de la palabra string que viene como paramentro)
+      obj[string[i]] = 0;
+    }  
+    obj[string[i]] = obj[string[i]] + 1;
+  }
+  return(obj);
+
+
 }
 
 
@@ -26,6 +47,24 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
+  var mayus ="";
+  var minus ="";
+  var palabra = "";
+
+for(var i = 0; i < s.length; i++){
+    if(s[i] === s[i].toUpperCase()) {
+        mayus = mayus + s[i];
+    } else {
+        minus = minus + s[i]
+    }
+  }
+  
+palabra = mayus + minus;
+
+return palabra;
+
+
 }
 
 
@@ -35,6 +74,18 @@ function asAmirror(str) {
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
   //Escribe tu código aquí
+
+  function espejar() {
+    var mirror = "";
+      for(var i = str.length -1; i >= 0; i--) {
+     mirror = mirror + str[i];
+   }
+   
+     return mirror.split(" ").reverse().join(" ");
+}
+
+     return(espejar());
+
 } 
 
 
@@ -43,6 +94,18 @@ function capicua(numero){
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+
+  valor = "";
+  valor = numero.toString();
+  if(valor.split("").reverse().join("") === valor){
+    return "Es capicua";
+  }
+  
+  else{
+      return "No es capicua";
+  }
+
+
 }
 
 
@@ -50,22 +113,59 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+
+var newCadena = "";
+
+for(var i= 0;i<cadena.length;i++){
+  if (cadena[i] !== "a" && cadena[i] !== "b" && cadena[i] !== "c"){
+    newCadena = newCadena + cadena[i]; 
+  }   
+}
+return newCadena;
+
 }
 
 
 function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
-  //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
+  //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] ||
+  // Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+
+ for(var i =0; i< arr.length-1; i++){
+   for(var j=0; j< arr.length-1; j++){
+     if(arr[j].length > arr[j+1].length){
+      var index = arr[j]
+      arr[j] = arr[j+1]
+      arr[j+1] = index
+      }     
+   }
 }
+return arr;
+
+}
+
 
 
 function buscoInterseccion(arreglo1, arreglo2){
   //Existen dos arrays, cada uno con 5 números. A partir de ello, escribir una función que permita 
-  //retornar un nuevo array con la intersección de ambos elementos. (Ej: [4,2,3] unión [1,3,4] = [3,4].
+  //retornar un nuevo array con la intersección de ambos elementos. (Ej: [4,2,3] interseccion [1,3,4]
+  // = [3,4].
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
-  //Escribe tu código aquí  
+  //Escribe tu código aquí 
+
+  var intersection = []; 
+
+  for(var i = 0; i< arreglo1.length; i++){
+  for (var k = 0; k< arreglo2.length; k++){
+    if(arreglo1[i] === arreglo2[k]){
+      intersection.push(arreglo1[i]);
+    }
+  }
+}
+return intersection;
+
 }
 
 
